@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(245, 237, 215);
+            color:#797367;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+
+/* 外枠ボーダー */
+#border {
+            position: absolute;
+            z-index: 1;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            pointer-events: none;
+            overflow-y: scroll;
+            position: fixed;
+        }
+
+#border::before {
+            content: " ";
+            display: block;
+            height: 100%;
+            min-height: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 4px solid #797367;
+            z-index: 1;
+        }
+
+
+/* 横のヘッダー      */
+header {
+    float: left;
+    padding-top: 48px;
+    padding-left: 48px;
+    width: 180px;
+    overflow-y: scroll;
+    position: fixed;
+}
+
+
+
+/* .subtitle {
+    display: flex;
+    justify-content: center;
+} */
+
+h1 {
+    writing-mode: vertical-rl;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    letter-spacing: 7px;
+}
+
+header li{
+    margin-bottom: 30px;   
+    font-size: 26px;
+}
+
+header a {
+    text-decoration: none;
+    color: #797367;
+    position: relative;
+    display: inline-block;
+}
+
+header a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background:#797367;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+header a:hover::after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* 真ん中タイトル */
+main {
+    height: 789px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    
+}
+
+.title {
+    /* display: flex;
+    justify-content: center ;
+    flex-direction: column; */
+    text-align: center;
+    margin-right: 5px;
+    padding-bottom: 70px;
+}
+
+.title h2 {
+    font-size: 75px; 
+    margin-bottom: 0px;
+}
+
+.title p {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.title_img {
+    padding-bottom: 80px;
+}
+
+/* スクロール各項目 */
+.submenu {
+    font-size: 30px;
+    padding-left: 350px;
+}
+
+.unmenu {
+    border-bottom:3px solid #797367;
+}
