@@ -16,7 +16,9 @@
         <header>
             <div class="subtitle">
                 <h1>ハイレコ</h1>
+
             </div>
+
             <div class="navi">
                 <ul style="list-style:none;">
                     <li>
@@ -26,13 +28,13 @@
                         <a href="food.html">Food</a>
                     </li>
                     <li>
-                        <a href="">Book</a>
+                        <a href="book.html">Book</a>
                     </li>
                     <li>
-                        <a href="">Movie</a>
+                        <a href="movie.html">Movie</a>
                     </li>
                     <li>
-                        <a href="">G's</a>
+                        <a href="gs.html">G's</a>
                     </li>
                 </ul>
             </div>
@@ -41,6 +43,11 @@
         <main>
             <div class="title">
                 <h2>HiRECO</h2>
+                <div class="line-it-button" data-lang="ja" data-type="share-b" data-ver="3"
+                    data-url="https://shun0305.github.io/03_07_HiRECO/" data-color="grey" data-size="small"
+                    data-count="false" style="display: none;"></div>
+                <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async"
+                    defer="defer"></script>
                 <p>あなたのお気に入りを全部まとめて</p>
             </div>
             <div class="title_img">
@@ -49,7 +56,10 @@
         </main>
 
         <div class="submenu" id="food">
+
             <h3><span class="unmenu">Food</span></h3>
+            <p id="test22">test</p>
+            <p>test</p>
         </div>
         <div class="submenu" id="book">
             <h3><span class="unmenu">Book</span></h3>
@@ -64,7 +74,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
 
-
+    <script>
+        window.onload = function onLoad() {
+            target = document.getElementById("test22");
+            target.innerHTML = $('#inputform_0').val();
+            console.log($('#inputform_0').val());
+        }
+    </script>
 
 </body>
 

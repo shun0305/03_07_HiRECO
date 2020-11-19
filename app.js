@@ -43,6 +43,7 @@ $(window).on("load", function () {
 // }
 
 //自動保存 JSON 
+
 $('#text_area-').on('keyup', function () {
     const data = {
         title: $('#inputform_0').val(),
@@ -51,7 +52,9 @@ $('#text_area-').on('keyup', function () {
     const jsonData = JSON.stringify(data);
     localStorage.setItem('memo', jsonData)
     console.log(data)
+
 })
+
 
 // //ページ読み込み：保存データ取得表示
 
@@ -60,6 +63,7 @@ if (localStorage.getItem('memo')) {
     const data = JSON.parse(jsonData);
     $('#inputform_0').val(data.title);
     $('#text_area-').val(data.content);
+
 
 }
 
@@ -217,10 +221,364 @@ if (localStorage.getItem('memo7')) {
 //         f.parentNode.appendChild(cln);
 
 //     });
-    // document.addEventListener('click', (e) => {
-    //     if (e.target.classList.contains('del')) {
-    //         var f = e.target.closest('form');
-    //         f.parentNode.removeChild(f);
-    //     }
-    // });
+// document.addEventListener('click', (e) => {
+//     if (e.target.classList.contains('del')) {
+//         var f = e.target.closest('form');
+//         f.parentNode.removeChild(f);
+//     }
 // });
+// });
+
+
+$('#book_area-').on('keyup', function () {
+    const data = {
+        title: $('#bookform_0').val(),
+        content: $('#book_area-').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('book', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('book')) {
+    const jsonData = localStorage.getItem('book');
+    const data = JSON.parse(jsonData);
+    $('#bookform_0').val(data.title);
+    $('#book_area-').val(data.content);
+
+
+}
+$('#book_area-1').on('keyup', function () {
+    const data = {
+        title: $('#bookform_1').val(),
+        content: $('#book_area-1').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('book1', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('book1')) {
+    const jsonData = localStorage.getItem('book1');
+    const data = JSON.parse(jsonData);
+    $('#bookform_1').val(data.title);
+    $('#book_area-1').val(data.content);
+
+
+}
+$('#book_area-2').on('keyup', function () {
+    const data = {
+        title: $('#bookform_2').val(),
+        content: $('#book_area-2').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('book2', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('book2')) {
+    const jsonData = localStorage.getItem('book2');
+    const data = JSON.parse(jsonData);
+    $('#bookform_2').val(data.title);
+    $('#book_area-2').val(data.content);
+
+
+}
+$('#book_area-3').on('keyup', function () {
+    const data = {
+        title: $('#bookform_3').val(),
+        content: $('#book_area-3').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('book3', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('book3')) {
+    const jsonData = localStorage.getItem('book3');
+    const data = JSON.parse(jsonData);
+    $('#bookform_3').val(data.title);
+    $('#book_area-3').val(data.content);
+
+
+}
+$('#book_area-4').on('keyup', function () {
+    const data = {
+        title: $('#bookform_4').val(),
+        content: $('#book_area-4').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('book4', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('book4')) {
+    const jsonData = localStorage.getItem('book4');
+    const data = JSON.parse(jsonData);
+    $('#bookform_4').val(data.title);
+    $('#book_area-4').val(data.content);
+
+
+}
+$('#book_area-5').on('keyup', function () {
+    const data = {
+        title: $('#bookform_5').val(),
+        content: $('#book_area-5').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('book5', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('book5')) {
+    const jsonData = localStorage.getItem('book5');
+    const data = JSON.parse(jsonData);
+    $('#bookform_5').val(data.title);
+    $('#book_area-5').val(data.content);
+
+
+}
+$('#book_area-').on('keyup', function () {
+    const data = {
+        title: $('#bookform_6').val(),
+        content: $('#book_area-6').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('book6', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('book6')) {
+    const jsonData = localStorage.getItem('book6');
+    const data = JSON.parse(jsonData);
+    $('#bookform_6').val(data.title);
+    $('#book_area-6').val(data.content);
+
+
+}
+$('#book_area-7').on('keyup', function () {
+    const data = {
+        title: $('#bookform_7').val(),
+        content: $('#book_area-7').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('book7', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('book7')) {
+    const jsonData = localStorage.getItem('book7');
+    const data = JSON.parse(jsonData);
+    $('#bookform_7').val(data.title);
+    $('#book_area-7').val(data.content);
+
+
+}
+$('#movie_area-').on('keyup', function () {
+    const data = {
+        title: $('#movieform_0').val(),
+        content: $('#movie_area-').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('movie', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('movie')) {
+    const jsonData = localStorage.getItem('movie');
+    const data = JSON.parse(jsonData);
+    $('#movieform_0').val(data.title);
+    $('#movie_area-').val(data.content);
+
+
+}
+$('#movie_area-1').on('keyup', function () {
+    const data = {
+        title: $('#movieform_1').val(),
+        content: $('#movie_area-1').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('movie1', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('movie1')) {
+    const jsonData = localStorage.getItem('movie1');
+    const data = JSON.parse(jsonData);
+    $('#movieform_1').val(data.title);
+    $('#movie_area-1').val(data.content);
+
+
+}
+$('#movie_area-2').on('keyup', function () {
+    const data = {
+        title: $('#movieform_2').val(),
+        content: $('#movie_area-2').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('movie2', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('bmovie2')) {
+    const jsonData = localStorage.getItem('movie2');
+    const data = JSON.parse(jsonData);
+    $('#movie_2').val(data.title);
+    $('#movie_area-2').val(data.content);
+
+
+}
+$('#movie_area-3').on('keyup', function () {
+    const data = {
+        title: $('#movieform_3').val(),
+        content: $('#movie_area-3').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('movie3', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('movie3')) {
+    const jsonData = localStorage.getItem('movie3');
+    const data = JSON.parse(jsonData);
+    $('#movieform_3').val(data.title);
+    $('#movie_area-3').val(data.content);
+
+
+}
+$('#movie_area-4').on('keyup', function () {
+    const data = {
+        title: $('#movieform_4').val(),
+        content: $('#movie_area-4').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('movie4', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('movie4')) {
+    const jsonData = localStorage.getItem('movie4');
+    const data = JSON.parse(jsonData);
+    $('#movieform_4').val(data.title);
+    $('#movie_area-4').val(data.content);
+
+
+}
+$('#movie_area-5').on('keyup', function () {
+    const data = {
+        title: $('#movieform_5').val(),
+        content: $('#movie_area-5').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('movie5', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('movie5')) {
+    const jsonData = localStorage.getItem('movie5');
+    const data = JSON.parse(jsonData);
+    $('#movieform_5').val(data.title);
+    $('#movie_area-5').val(data.content);
+
+
+}
+$('#movie_area-').on('keyup', function () {
+    const data = {
+        title: $('#movieform_6').val(),
+        content: $('#movie_area-6').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('movie6', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('movie6')) {
+    const jsonData = localStorage.getItem('movie6');
+    const data = JSON.parse(jsonData);
+    $('#movieform_6').val(data.title);
+    $('#movie_area-6').val(data.content);
+
+
+}
+$('#movie_area-7').on('keyup', function () {
+    const data = {
+        title: $('#movieform_7').val(),
+        content: $('#movie_area-7').val(),
+    };
+    const jsonData = JSON.stringify(data);
+    localStorage.setItem('movie7', jsonData)
+    console.log(data)
+
+})
+
+
+// //ページ読み込み：保存データ取得表示
+
+if (localStorage.getItem('movie7')) {
+    const jsonData = localStorage.getItem('movie7');
+    const data = JSON.parse(jsonData);
+    $('#movieform_7').val(data.title);
+    $('#movie_area-7').val(data.content);
+
+
+}
