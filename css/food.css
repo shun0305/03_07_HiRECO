@@ -99,13 +99,24 @@ header a:hover::after {
     display: flex;
     justify-content: center; 
     /* align-items: center; */
-    padding-right: 150px;
+    padding-right: 90px;
     
+}
+
+#add {
+    height: 35px;
+    margin-top: 100px;
+    margin-right: 150px;
+    font-size: 30px;
+    border-radius: 16%;
+    color:#797367;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .title {
     text-align: center;
-    margin-right: 5px;
+    /* margin-right: 255px; */
 }
 
 .title h2 {
@@ -123,21 +134,15 @@ header a:hover::after {
 
 /* メモ欄 */
 main {
-    margin-top: 20px;
-    padding-right: 220px;
+    /* margin-top: 20px; */
+    /* padding-right: 220px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     
 }
 
-#text {
-    font-size: 20px;
-    color:#797367;
-    font-family: 'Noto Sans JP', sans-serif;
-    width: 250px;
-    height: 22px;
-    border:2px solid #797367;
-}
+
+
 
 textarea {
     resize: none;
@@ -148,10 +153,21 @@ textarea {
     height: 250px;
     margin-top: 3px;
     border:2px solid #797367;
+    /* display: inline-block; */
 }
 
-.memo {
-    display: flex;
+
+
+.f{display:inline-block;margin:0;}
+.f input {
+    display: flex; 
     flex-direction: column;
+    font-size: 20px;
+    color:#797367;
+    font-family: 'Noto Sans JP', sans-serif;
     width: 250px;
+    height: 22px;
+    border:2px solid #797367;
+    margin-right: 25px;
+    margin-top: 10px;
 }
