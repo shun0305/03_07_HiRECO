@@ -63,6 +63,8 @@ if (localStorage.getItem('memo')) {
     const data = JSON.parse(jsonData);
     $('#inputform_0').val(data.title);
     $('#text_area-').val(data.content);
+    const target = document.getElementById("food0");
+    target.textContent = '⌘' + ' ' + data.title;
 
 
 }
